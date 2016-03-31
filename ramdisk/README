@@ -1,3 +1,5 @@
+To use one of the precompiled cpios: rename one of them to 'ramdisk.cpio'
+
 You need to match addresses in 'fstab.hikey', 'init.hikey.rc' and 'init.hikey.usb.rc' to the ones defined in the hypervisor dts for emmc, micro-SDcard and USB. Use only lower case characters.
 
 To unpack a ramdisk.cpio: make a new directory and from within it run
