@@ -16,13 +16,21 @@
 
 #include <linux/mm.h>
 
-#define SOC_G3D_S_BASE_ADDR		0xF4080000 /* G3D ctrl base addr */
+#if 1
+#define SOC_G3D_S_BASE_ADDR            0xC01B0000 /* G3D ctrl base addr */
+#define SOC_MEDIA_SCTRL_BASE_ADDR	0xC0110000 /* media ctrl base addr */
+#define SOC_PMCTRL_BASE_ADDR		0xC0111000 /* pm ctrl base addr */
+#define SOC_AO_SCTRL_BASE_ADDR		0xC010C000 /* ao ctrl base addr */
+#define SOC_PERI_SCTRL_BASE_ADDR	0xC010E000 /* peri ctrl base addr */
+#else
+#define SOC_G3D_S_BASE_ADDR            0xF4080000 /* G3D ctrl base addr */
 #define SOC_MEDIA_SCTRL_BASE_ADDR	0xF4410000 /* media ctrl base addr */
-#define REG_MEDIA_SC_IOSIZE		PAGE_ALIGN(SZ_4K)
 #define SOC_PMCTRL_BASE_ADDR		0xF7032000 /* pm ctrl base addr */
-#define REG_PMCTRL_IOSIZE		PAGE_ALIGN(SZ_4K)
 #define SOC_AO_SCTRL_BASE_ADDR		0xF7800000 /* ao ctrl base addr */
 #define SOC_PERI_SCTRL_BASE_ADDR	0xF7030000 /* peri ctrl base addr */
+#endif
+#define REG_PMCTRL_IOSIZE		PAGE_ALIGN(SZ_4K)
+#define REG_MEDIA_SC_IOSIZE		PAGE_ALIGN(SZ_4K)
 #define REG_SC_ON_IOSIZE		PAGE_ALIGN(SZ_8K)
 #define REG_SC_OFF_IOSIZE		PAGE_ALIGN(SZ_4K)
 

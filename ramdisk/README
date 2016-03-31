@@ -1,0 +1,7 @@
+You need to match addresses in 'fstab.hikey', 'init.hikey.rc' and 'init.hikey.usb.rc' to the ones defined in the hypervisor dts for emmc, micro-SDcard and USB. Use only lower case characters.
+
+To unpack a ramdisk.cpio: make a new directory and from within it run
+   $ cpio -id < ../ramdisk.cpio
+
+To create a new cpio using modified contents of an old: from within the created directory run
+   $ find . | cpio --create --format='newc' > ../ramdisk.cpio
