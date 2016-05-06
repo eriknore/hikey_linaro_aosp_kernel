@@ -50,7 +50,7 @@
 #define MALI_IRQ_ID 142
 /* Erik: Doesn't the memory for the frame buffer need to be reserved!? */
 #if 1
-#define MALI_FRAME_BUFFER_ADDR 0x2F100000
+#define MALI_FRAME_BUFFER_ADDR 0x34100000
 #else
 #define MALI_FRAME_BUFFER_ADDR 0x3F100000
 #endif

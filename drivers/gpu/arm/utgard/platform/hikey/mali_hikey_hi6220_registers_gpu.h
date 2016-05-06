@@ -17,11 +17,11 @@
 #include <linux/mm.h>
 
 #if 1
-#define SOC_G3D_S_BASE_ADDR            0xC01B0000 /* G3D ctrl base addr */
-#define SOC_MEDIA_SCTRL_BASE_ADDR	0xC0110000 /* media ctrl base addr */
-#define SOC_PMCTRL_BASE_ADDR		0xC0111000 /* pm ctrl base addr */
-#define SOC_AO_SCTRL_BASE_ADDR		0xC010C000 /* ao ctrl base addr */
-#define SOC_PERI_SCTRL_BASE_ADDR	0xC010E000 /* peri ctrl base addr */
+#define SOC_G3D_S_BASE_ADDR            0xC0050000 /* G3D ctrl base addr */
+#define SOC_MEDIA_SCTRL_BASE_ADDR	0xC0010000 /* media ctrl base addr */
+#define SOC_PMCTRL_BASE_ADDR		0xC0011000 /* pm ctrl base addr */
+#define SOC_AO_SCTRL_BASE_ADDR		0xC000C000 /* ao ctrl base addr */
+#define SOC_PERI_SCTRL_BASE_ADDR	0xC000E000 /* peri ctrl base addr */
 #else
 #define SOC_G3D_S_BASE_ADDR            0xF4080000 /* G3D ctrl base addr */
 #define SOC_MEDIA_SCTRL_BASE_ADDR	0xF4410000 /* media ctrl base addr */
